@@ -16,12 +16,11 @@
     background-color: white;
     padding: 0 18px;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.5s ease-out;
 }
 
 .active {
     max-height: 100px;
-    transition: max-height 0.3s ease-out;
     background-color: #ccc;
 }
 

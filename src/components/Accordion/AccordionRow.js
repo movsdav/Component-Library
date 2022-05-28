@@ -1,8 +1,11 @@
 import classes from "./styles.module.css";
 import {useState} from "react";
+import {DEFAULT_OPTION} from "../../helpers/constants";
 
-const AccordionRow = () => {
+const AccordionRow = ({options = DEFAULT_OPTION}) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const {title, text} = options;
 
     const onClick = () => {
         setIsOpen(!isOpen);
@@ -10,13 +13,9 @@ const AccordionRow = () => {
 
     return (
         <>
-            <button onClick={onClick} className={classes.button}>Lorem ipsum</button>
+            <button onClick={onClick} className={classes.button}>{title}</button>
             <div className={[classes.body, ...(isOpen ? [classes.active] : [])].join(' ')}>
-                <p>Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Dolore esse eveniet laborum libero quos
-                    unde vero. Adipisci ducimus exercitationem facere fuga quasi quidem repudiandae, veniam? Commodi
-                    cumque eligendi est iusto minima praesentium vel? Dignissimos ducimus ex, facere illo omnis
-                    voluptatum.</p>
+                <p>{text}</p>
             </div>
         </>
     )

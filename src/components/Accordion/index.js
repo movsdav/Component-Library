@@ -2,12 +2,11 @@ import AccordionRow from "./AccordionRow";
 import classes from "./styles.module.css";
 
 const Accordion = props => {
+    const {items} = props;
+
     return(
         <div className={classes.container}>
-            <AccordionRow />
-            <AccordionRow />
-            <AccordionRow />
-            <AccordionRow />
+            {items.map((item,key)=><AccordionRow options={item} key={key}/>)}
         </div>
     )
 }
