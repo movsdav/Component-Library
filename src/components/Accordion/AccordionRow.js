@@ -1,4 +1,4 @@
-import classes from "./styles.module.css";
+import classes from "./style.module.css";
 import {useState} from "react";
 import {DEFAULT_OPTION} from "../../helpers/constants";
 

@@ -16,7 +16,7 @@
     background-color: white;
     padding: 0 18px;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height .5s ease-out;
 }
 
 .active {

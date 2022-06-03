@@ -1,0 +1,26 @@
+import classes from "./style.module.css";
+import CardHeader from "./CardHeader";
+import CardContent from "./CardContent";
+import {DEFAULT_TITLE, LONG_TEXT, SHORT_TEXT} from "../../helpers/constants";
+import CardImage from "./CardImage";
+import CardButton from "./CardButton";
+
+const Card = ({options}) => {
+    const {header = DEFAULT_TITLE, content = SHORT_TEXT, imgUri = '', button = {}} = options;
+
+
+    return (
+        <div className={classes.container}>
+            {imgUri && <div className={classes.image}><CardImage uri={imgUri}/></div>}
+            <div className={classes.header}>
+                <CardHeader header={header}/>
+            </div>
+            <div className={classes.content}>
+                <CardContent content={content}/>
+            </div>
+            {button && <div className={classes.button}><CardButton text={button.text} clickHandler={button.clickHandler}/></div>}
+        </div>
+    );
+}
+
+export default Card;

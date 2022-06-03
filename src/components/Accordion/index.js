@@ -1,5 +1,5 @@
 import AccordionRow from "./AccordionRow";
-import classes from "./styles.module.css";
+import classes from "./style.module.css";
 
 const Accordion = props => {
     const {items} = props;
