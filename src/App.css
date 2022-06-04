@@ -22,6 +22,10 @@
     background: #888;
 }
 
+*:focus{
+    outline: none;
+}
+
 .container{
     display: flex;
 }
