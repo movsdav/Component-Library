@@ -1,0 +1,31 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: #888;
+}
+
+*:focus{
+    outline: none;
+}
+
+.container{
+    display: flex;
+}
