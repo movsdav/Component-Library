@@ -1,13 +1,14 @@
 import React from "react";
+import style from "./style.css";
 
 const ProgressBar = (props) => {
     const { bgcolor, completed } = props;
 
     const containerStyles = {
         height: 20,
-        width: '100%',
+        width: 400,
         backgroundColor: "#e0e0de",
-        borderRadius: 50,
+        borderRadius: 5,
         margin: 50
     }
 
@@ -15,7 +16,7 @@ const ProgressBar = (props) => {
         height: '100%',
         width: `${completed}%`,
         backgroundColor: bgcolor,
-        borderRadius: 'inherit',
+        borderRadius: 50,
         textAlign: 'right'
     }
 
@@ -28,7 +29,8 @@ const ProgressBar = (props) => {
     return (
         <div style={containerStyles}>
             <div style={fillerStyles}>
-                <span style={labelStyles}>{`${completed}%`}</span>
+                <span style={labelStyles}>{`${completed}%`}
+              </span>
             </div>
         </div>
     );
