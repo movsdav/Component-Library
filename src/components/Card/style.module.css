@@ -14,8 +14,8 @@
     max-width: 320px;
     max-height: 55vh;
 
-    border: 1px solid black;
-    background-color: #001f3f;
+    border: 2px solid black;
+    background-color: white;
 }
 
 .header{
@@ -25,7 +25,7 @@
 }
 .header>h2{
     margin: .6rem;
-    color: white;
+    color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -39,7 +39,7 @@
 
 .content>p{
     margin: .2rem .2rem .2rem .6rem;
-    color: white;
+    color: black;
     font-family: 'Joan', serif;
 }
 
@@ -68,7 +68,7 @@
 
 
 .button>button{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,116,1) 35%, rgba(0,212,255,1) 100%);
+
     font-size: 1em;
     min-height: 2rem;
     width: 50%;
@@ -78,8 +78,8 @@
     border: 1px solid black;
     border-radius: 10px;
     background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 4px azure;
+    color: black;
+    box-shadow: 0 0 4px black;
     display: inline-block;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;

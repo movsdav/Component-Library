@@ -2,10 +2,11 @@ import classes from "./style.module.css";
 import {useState} from "react";
 import {DEFAULT_OPTION} from "../../helpers/constants";
 
-const AccordionRow = ({options = DEFAULT_OPTION}) => {
+const AccordionRow = ({options = DEFAULT_OPTION, styles}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const {title, text} = options;
+
 
     const onClick = () => {
         setIsOpen(!isOpen);

@@ -18,7 +18,9 @@ const Card = ({options}) => {
             <div className={classes.content}>
                 <CardContent content={content}/>
             </div>
-            {button && <div className={classes.button}><CardButton text={button.text} clickHandler={button.clickHandler}/></div>}
+            {Object.keys(button).length !== 0 && <div className={classes.button}><CardButton text={button.text}
+                                                                                             clickHandler={button.clickHandler}/>
+            </div>}
         </div>
     );
 }
