@@ -19,7 +19,7 @@ function App() {
                 <Route path='/cardImg' element={<Card options={{imgUri:'https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png'}}/>}/>
                 <Route path='/cardButton' element={<Card options={{button:{text:"Click"}}}/>}/>
                 <Route path='/cardDropdown' element={<Card options={{dropdown:{text: "Test"}}}/>}/>
-                <Route path='/card1' element={<Card options={{
+                <Route path='/cardAll' element={<Card options={{
                         imgUri:'https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png',
                         button:{text:"Click"},
                         dropdown:{text: "Test"}
