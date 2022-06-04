@@ -1,5 +1,5 @@
 import classes from "./style.module.css";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 
 const RangeSlider = ({min, max} = {min: 1, max: 100}) => {
     const [value, setValue] = useState((min + max) / 2);
@@ -7,6 +7,7 @@ const RangeSlider = ({min, max} = {min: 1, max: 100}) => {
     const handleChange = (e, value) => {
         setValue(value);
     };
+
 
     useEffect(() => {
         const slider = document.querySelector(`.${classes.bubble}`);
@@ -17,19 +18,15 @@ const RangeSlider = ({min, max} = {min: 1, max: 100}) => {
         const setLeftProp = (el,left) => el.style.left = `${left}px`
 
         if (slider) setLeftProp(slider,left);
-
-        // window.addEventListener('resize',()=>setLeftProp(slider,left));
-        //
-        // return ()=>{
-        //     window.removeEventListener()
-        // }
     })
 
     return (
         <div className={classes.container}>
+            <span>{min}</span>
             <input type='range' min={min} max={max} value={value} className={classes.slider}
                    onChange={e => handleChange(e, e.target.value)}/>
             <output className={classes.bubble}>{value}</output>
+            <span>{max}</span>
         </div>
     );
 }

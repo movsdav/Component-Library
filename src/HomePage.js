@@ -13,6 +13,8 @@ const HomePage = () => {
                     <ul>
                         <li><Link to='/cardImg'>Card with image</Link></li>
                         <li><Link to='/cardButton'>Card with button</Link></li>
+                        <li><Link to='/cardDropdown'>Card with dropdown</Link></li>
+                        <li><Link to='/cardAll'>Card with all</Link></li>
                     </ul>
                 </li>
             </ul>

@@ -17,7 +17,13 @@ function App() {
                 <Route path='/autocomplete' element={<Autocomplete/>}/>
                 <Route path='/card' element={<Card options={{}}/>}/>
                 <Route path='/cardImg' element={<Card options={{imgUri:'https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png'}}/>}/>
-                <Route path='/cardButton' element={<Card options={{button:{text:"Like"}}}/>}/>
+                <Route path='/cardButton' element={<Card options={{button:{text:"Click"}}}/>}/>
+                <Route path='/cardDropdown' element={<Card options={{dropdown:{text: "Test"}}}/>}/>
+                <Route path='/cardAll' element={<Card options={{
+                        imgUri:'https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png',
+                        button:{text:"Click"},
+                        dropdown:{text: "Test"}
+                }}/>}/>
                 <Route path='*' element={<HomePage/>}/>
             </Routes>
         </>

@@ -1,0 +1,12 @@
+.button{
+    font-size: 1em;
+    min-height: 2rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
