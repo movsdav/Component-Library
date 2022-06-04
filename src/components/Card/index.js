@@ -4,9 +4,10 @@ import CardContent from "./CardContent";
 import {DEFAULT_TITLE, LONG_TEXT, SHORT_TEXT} from "../../helpers/constants";
 import CardImage from "./CardImage";
 import CardButton from "./CardButton";
+import CardDropdown from "./CardDropdown";
 
 const Card = ({options}) => {
-    const {header = DEFAULT_TITLE, content = SHORT_TEXT, imgUri = '', button = {}} = options;
+    const {header = DEFAULT_TITLE, content = SHORT_TEXT, imgUri = '', button = {},dropdown={}} = options;
 
 
     return (
@@ -21,6 +22,7 @@ const Card = ({options}) => {
             {Object.keys(button).length !== 0 && <div className={classes.button}><CardButton text={button.text}
                                                                                              clickHandler={button.clickHandler}/>
             </div>}
+            {Object.keys(dropdown).length !== 0 && <div className={classes.dropdowncontainer}><CardDropdown /></div>}
         </div>
     );
 }
